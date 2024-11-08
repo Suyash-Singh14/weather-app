@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{text-decoration: none;}
+button{border: none;outline: none;}
+
+.main{
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main .box{
+    background-image: linear-gradient(to bottom right, #77A1D3, #79CBCA);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+}
+
+.box .upper{
+    display: flex;
+    gap: 50px;
+}
+
+.box .upper .temperature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box .upper .temperature .curr_temp{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.box .upper .temperature .curr_temp{
+    font-size: 40px;
+}
+
+.box .upper .other-factors{
+    font-size: 16px;
+    color: rgb(240, 237, 237);;
+}
+
+.box .mid .grid .day{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #77A1D3;
+    margin: 10px;
+    font-weight: bold;
+}
+.box .mid .grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 50px;
+}
+
+.box .mid .grid .day{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box .mid .grid .day .weather-icon i{
+    font-size: 2em;
+    margin: 10px 0;
+}
